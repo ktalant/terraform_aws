@@ -1,6 +1,6 @@
 
 resource "aws_security_group" "my_dev_sg" {
-  name        = var.var_my_dev_sg
+  name        = "ssh-http-https"
   description = "Allow TLS inbound traffic"
   vpc_id      = "vpc-be96e0d6"
 
