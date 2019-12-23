@@ -1,8 +1,8 @@
-resource "aws_s3_bucket" "dev_s3" {
+resource "aws_s3_bucket" "dev_bucket" {
   bucket            = var.devbucket
 
   tags = {
-      Name          = "dev_s3"
+      Name          = "devbucket"
       env           = "dev"
       
   }
