@@ -2,6 +2,7 @@ resource "aws_instance" "dev_instance" {
   ami                   = var.vm_ami
   instance_type         = var.vm_type
   security_groups       = var.var_my_dev_sg
+  security_groups       = var.var_new_sg
 
   tags = {
     Name                = "dev-vm"
