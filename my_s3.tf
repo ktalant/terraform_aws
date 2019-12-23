@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "dev_s3" {
-  bucket            = var.dev_bucket_name
+  bucket            = var.devbucket
 
   tags = {
       Name          = "dev_s3"

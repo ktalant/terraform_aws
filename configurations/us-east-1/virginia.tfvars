@@ -1,3 +1,3 @@
-vm_ami          = "ami-00068cd7555f543d5"
+vm_ami          = "ami-0dacb0c129b49f529"
 vm_type         = "t2.micro"
-dev_bucket_name = "my-new-bucket"
+devbucket       = "devbucket1"
