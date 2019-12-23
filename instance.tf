@@ -3,7 +3,7 @@ resource "aws_instance" "dev_instance" {
   instance_type         = var.vm_type
   security_groups       = var.var_my_dev_sg
 
-  tags {
+  tags = {
     Name                = "dev-vm"
     env                 = "dev"
     app                 = "app1"
