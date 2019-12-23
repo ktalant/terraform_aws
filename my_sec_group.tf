@@ -33,7 +33,12 @@ resource "aws_security_group" "my_dev_sg" {
     # Opening to 0.0.0.0/0 can lead to security vulnerabilities.
     cidr_blocks = ["0.0.0.0/0"]
   }
-
+  ingress {
+    from_port   = 8080
+    to_port     = 8080
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
 
   egress {
     from_port       = 0
@@ -42,3 +47,6 @@ resource "aws_security_group" "my_dev_sg" {
     cidr_blocks     = ["0.0.0.0/0"]
   }
 }
+
+
+
