@@ -48,5 +48,16 @@ resource "aws_security_group" "my_dev_sg" {
   }
 }
 
+resource "aws_security_group" "new_sg_12" {
+  name  = "new-sg"
+  description  = "8081 for testing purpose"
+  vpc_id  = "vpc-be96e0d6"
+  
+  ingress {
+    from_port  = 8081
+    to_port  = 8081
+    cidr_blocks  = ["0.0.0.0/0"]
+  }
+}
 
 
