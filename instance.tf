@@ -11,11 +11,11 @@ resource "aws_instance" "dev_instance" {
   }
 
   provisioner "remote-exec" { 
-    connection { 
-      host        = self.public_ip 
-      type        = "ssh" 
-      user        = var.var_user 
-      private_key = file(var.var_ssh_key) 
+    connection {
+      host        = self.public_ip
+      type        = "ssh"
+      user        = var.var_user
+      private_key = file(var.var_ssh_key) 
     } 
 
     inline = [ 
