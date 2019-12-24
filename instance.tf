@@ -20,6 +20,9 @@ resource "aws_instance" "dev_instance" {
 
     inline = [ 
       "sudo yum install -y epel-release", 
+      "sudo yum install -y httpd",
+      "sudo systemctl start httpd",
+      "suod systemctl enable httpd",
     ] 
 
   } 
