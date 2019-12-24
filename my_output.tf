@@ -6,5 +6,5 @@ output "dev_ami_id" {
 }
 
 output "dev_sec_group" {
-  value = aws_security_group.sg2[0].name
+  value = aws_security_group.sg2.name
 }
