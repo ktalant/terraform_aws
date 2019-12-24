@@ -48,7 +48,7 @@ resource "aws_security_group" "my_dev_sg" {
   }
 }
 
-resource "aws_security_group" "new_sg_12" {
+resource "aws_security_group" "sg2" {
   name  = "new-sg"
   description  = "8081 for testing purpose"
   vpc_id  = "vpc-be96e0d6"
