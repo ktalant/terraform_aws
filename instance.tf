@@ -9,7 +9,7 @@ resource "aws_instance" "dev_instance" {
     env                 = "dev"
     app                 = "app1"
   }
-  
+
   provisioner "remote-exec" {
     connection {
       host        = self.public_ip
@@ -18,7 +18,7 @@ resource "aws_instance" "dev_instance" {
       private_key = file(var.var_ssh_key)
       }
 
-    inline = [ 
+    inline = [ 
       "sudo yum install -y epel-release", 
       "sudo yum install -y httpd",
       "sudo systemctl start httpd",
