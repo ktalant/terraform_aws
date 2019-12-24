@@ -25,7 +25,7 @@ resource "aws_security_group" "my_dev_sg" {
   }
 
   ingress {
-    # ssh (change to whatever ports you need)
+    # ssh 
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"

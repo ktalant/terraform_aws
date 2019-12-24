@@ -3,6 +3,7 @@ resource "aws_instance" "dev_instance" {
   instance_type         = var.vm_type
   security_groups       = var.var_my_dev_sg
   count                 = var.vm_count
+  key_name              = aws_key_pair.talant_key_pair.key_name
   
   tags = {
     Name                = "dev-vm"
