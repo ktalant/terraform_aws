@@ -14,4 +14,11 @@ variable "var_new_sg" {
 variable "vm_count" {
   
 }
+variable "var_user" {
+  
+}
+variable "var_ssh_key" {
+  
+}
+
 

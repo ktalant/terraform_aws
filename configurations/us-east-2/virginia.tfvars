@@ -5,4 +5,6 @@ devbucket       = "talant-bucket-1"
 var_key         = "new-key"
 var_my_dev_sg    = ["ssh-http-https"]
 var_new_sg      = ["new-sg"]
+var_user        = "ec2-user"
+var_ssh_key     = "~/.ssh/id_rsa"
 
