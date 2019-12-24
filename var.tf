@@ -11,4 +11,7 @@ variable "var_my_dev_sg" {
 variable "var_new_sg" {
   
 }
+variable "vm_count" {
+  
+}
 
