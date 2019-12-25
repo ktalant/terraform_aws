@@ -23,7 +23,7 @@ resource "aws_instance" "dev_instance" {
       "sudo yum install -y epel-release", 
       "sudo yum install -y httpd",
       "sudo systemctl start httpd",
-      "suod systemctl enable httpd",
+      "sudo systemctl enable httpd",
       ] 
     }
   }
